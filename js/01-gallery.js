@@ -18,14 +18,14 @@ const galleryAr = galleryItems.map((el) => galleryCard(el));
 
 galleryList.insertAdjacentHTML("afterbegin", galleryAr.join(""));
 
-// Модальне вікно
+// Okno modalne
 
 const onImageClick = (event) => {
-  // відмінна дії за замовчуванням
+ 
   event.preventDefault();
 
   const currentTarget = event.target;
-  // перевірка на картинку
+ 
 
   if (currentTarget.nodeName !== "IMG") {
     return;
